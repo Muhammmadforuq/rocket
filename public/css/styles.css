@@ -526,11 +526,11 @@ video {
 .z-20 {
   z-index: 20;
 }
-.z-0 {
-  z-index: 0;
-}
 .\!z-0 {
   z-index: 0 !important;
+}
+.z-0 {
+  z-index: 0;
 }
 .order-last {
   order: 9999;
@@ -753,7 +753,7 @@ video {
   }
 }
 .animate-spin {
-  animation: spin 30s linear infinite;
+  animation: spin 35s linear infinite;
 }
 .cursor-pointer {
   cursor: pointer;
