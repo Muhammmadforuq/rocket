@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="./assets/registered-regular-24.png">
     <link rel="stylesheet" href="./font/stylesheet.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Link Swiper's CSS -->
@@ -15,9 +16,9 @@
     <title>Rocket X // Home // Index</title>
   </head>
   <body>
-    <header class="border-y border-brand-gray">
+    <header class="relative lg:border-y border-brand-gray">
       <nav
-        class="relative max-w-5xl lg:max-w-7xl font-medium flex items-center justify-between mx-auto py-6 px-6 lg:px-1.5 z-10"
+        class="max-w-5xl lg:max-w-7xl font-medium flex items-center justify-between mx-auto py-6 px-6 lg:px-1.5 z-10"
       >
         <a href="#">
           <img src="./assets/logo-rocket-template.svg" alt="" />
@@ -120,26 +121,36 @@
             </svg>
           </a>
           <!-- Hamburger Button -->
-          <div
-            class="lg:hidden w-12 h-12 flex items-center justify-center rounded-full bg-brand-blue-400"
+          <button type="submit"
+            class="menuBtn lg:hidden w-12 h-12 flex items-center justify-center rounded-full bg-brand-black focus:bg-brand-blue-400 text-white"
           >
-            <button
-              id="menu-btn"
-              class="block hamburger focus:outline-none"
-              type="button"
-            >
-              <span class="hamburger-top"></span>
-              <span class="hamburger-bottom"></span>
-            </button>
-          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+          </svg>
+          
+          </button>
         </div>
         <!-- Mobile menu -->
         <div
-          id="menu"
-          class="absolute hidden rounded-lg left-6 right-6 -translate-y-0 bg-white z-30"
+          class="menu absolute left-0 top-0 w-full h-screen -translate-y-full bg-brand-black focus:bg-brand-blue-400 text-white z-30 p-6 transition ease-linear"
         >
+          <div class="flex justify-between items-center">
+              <a href="#">
+                <img src="./assets/logo-white-rocket-template.svg" alt="">
+              </a>
+
+              <button type="submit"
+            class="xBtn lg:hidden w-12 h-12 flex items-center justify-center rounded-full bg-brand-blue-400 text-white"
+          >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+          
+          </button>
+          </div>
+
           <div
-            class="text-4xl flex flex-col w-full space-y-8 font-medium rounded-sm"
+            class="text-4xl flex flex-col w-full space-y-8 font-medium rounded-sm py-10"
           >
             <a href="#">Home</a>
             <a href="#" class="">About</a>
@@ -192,10 +203,10 @@
               <h2
                 data-aos="zoom-in"
                 data-aos-duration="2000"
-                class="relative max-w-md md:max-w-2xl w-full font-semibold text-4xl md:text-6xl xl:text-7xl z-30 pb-2.5 md:pb-4 mx-auto"
+                class="relative max-w-md md:max-w-2xl w-full font-semibold text-4xl md:text-6xl xl:text-7xl z-10 pb-2.5 md:pb-4 mx-auto"
               >
                 We are a digital
-                <span class="relative z-20 inline-block px-8 -mx-8">
+                <span class="relative z-10 inline-block px-8 -mx-8">
                   marketing
                   <img
                     class="absolute left-0 top-0 !z-0 w-full h-full"

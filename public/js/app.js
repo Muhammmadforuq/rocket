@@ -1,15 +1,22 @@
 AOS.init();
 
-const btn = document.getElementById('menu-btn')
-const menu = document.getElementById('-translate-y-0')
+// const btn = document.getElementById('menu-btn')
+// const menu = document.getElementById('-translate-y-0')
 
-btn.addEventListener('click', navToggle)
+// btn.addEventListener('click', navToggle)
 
-function navToggle() {
-  btn.classList.toggle('open')
-  menu.classList.toggle('flex')
-  menu.classList.toggle('hidden')
-}
+// function navToggle() {
+//   btn.classList.toggle('open')
+//   menu.classList.toggle('flex')
+//   menu.classList.toggle('hidden')
+// }
+
+document.querySelector('.menuBtn').addEventListener('click', () => {
+  document.querySelector('.menu').classList.toggle('-translate-y-full')
+})
+document.querySelector('.xBtn').addEventListener('click', () => {
+  document.querySelector('.menu').classList.toggle('-translate-y-full')
+})
 
 
 var swiper = new Swiper(".mySwiperServices", {
